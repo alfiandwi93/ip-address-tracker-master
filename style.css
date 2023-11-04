@@ -1,0 +1,86 @@
+:root {
+  --rubik: 'Rubik', sans-serif;
+  
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+
+#main .container-fluid{
+	display: flex;
+ 	flex-direction: column;
+ 	color: white;
+ 	font-family: var(--rubik);
+}
+
+#main .bg{
+	background-image: url("images/pattern-bg-desktop.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	z-index: 2;
+}
+
+#main .bg p{
+	color: var(--dark-gray);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+#main .bg h6{
+	color: var(--very-dark-gray);
+	font-weight: 700;
+}
+
+#main #map {
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+#main .card{
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0px 14px 30px 16px rgba(0,0,0,0.15);
+}
+
+#main form{
+	margin-bottom: 50px;
+}
+
+#main button{
+	background-color: var(--very-dark-gray);
+}
+
+#main .form-control::placeholder{
+	color: var(--dark-gray);
+}
+
+#main .form-control{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#main button{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Gaya CSS untuk ukuran tablet di sini */
+}
+
+@media (max-width: 576px) {
+  #main .bg{
+	background-image: url("images/pattern-bg-mobile.png");
+	background-size: 100% 100%;
+}
+
+#main form{
+	margin-bottom: 180px;
+}
+
+
+}
